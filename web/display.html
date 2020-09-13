@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cars</title>
+    <style>
+        * {
+  margin: 0;
+}
+.header {
+  background-color: #131921;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  height: 50px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.header__link {
+  color: white;
+  text-decoration: none;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__optionLineOne {
+  font-size: 30px;
+}
+.home {
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-height: 400px;
+  min-width: 100px;
+  background-color: white;
+  margin: 10px;
+  z-index: 1;
+  padding: 20px;
+  width: 100%;
+}
+
+.product__rating {
+  display: flex;
+}
+.product__price {
+  margin-top: 5px;
+}
+.product__info {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.product > img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+.button_book > button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  border-color: #a88734 #9c7e31 #846a29;
+  cursor: pointer;
+}
+
+    </style>
+  </head>
+  <body bgcolor="#56baed">
+    <!-- Nav -->
+    <nav class="header">
+      <div class="header__nav">
+        <a href="payments.html" class="header__link">
+          <div class="header__option">
+           <span class="header__optionLineOne">Available Cars</span>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <!-- Products -->
+    <div class="home">
+      <div class="home__row">
+        <div class="product">
+          <div class="product__info">
+              <p><b>Audi</b></p>
+            
+          </div>
+           <img src="images/car-12.jpg" alt=""/>
+          <form action="bookid" method="post">
+          <div class="button_book">
+          <button type="submit" formaction="details">Details</button>
+          <button type="submit">Book</button> 
+          <input type="hidden" name="hide" value="1">
+        </div>
+        </form>
+
+        </div>
+
+        <div class="product">
+          <div class="product__info">
+              <p><b>Brezza</b></p>
+            
+          </div>
+           <img src="images/car-2.jpg" alt=""/> 
+          <form action="bookid" method="post">
+          <div class="button_book">
+          <button type="submit" formaction="details">Details</button>
+              <button type="submit">Book</button> 
+              <input type="hidden" name="hide" value="2">
+        </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="home__row">
+        <div class="product">
+          <div class="product__info">
+              <p><b>Mercedes</b></p>
+            
+          </div>
+          <img src="images/car-10.jpg" alt=""/>
+          <form action="bookid" method="post">
+          <div class="button_book">
+          <button type="submit" formaction="details">Details</button>
+              <button type="submit">Book</button> 
+              <input type="hidden" name="hide" value="3">
+        </div>
+        </form>
+        </div>
+
+        <div class="product">
+          <div class="product__info">
+              <p><b>Hyundai</b></p>
+            
+          </div>
+          <img src="images/car-5.jpg" alt=""/>
+          <form action="bookid" method="post">
+          <div class="button_book">
+          <button type="submit" formaction="details">Details</button>
+              <button type="submit">Book</button> 
+              <input type="hidden" name="hide" value="4">
+        </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="home__row">
+        <div class="product">
+          <div class="product__info">
+            <p>Rubicon</p>
+            
+          </div>
+          <img src="images/car-8.jpg" alt=""/>
+          <form action="bookid" method="post">
+          <div class="button_book">
+          <button type="submit" formaction="details">Details</button>
+              <button type="submit">Book</button> 
+              <input type="hidden" name="hide" value="5">
+        </div>
+        </form>
+        </div>
+
+        <div class="product">
+          <div class="product__info">
+            <p>Tata</p>
+           
+          </div>
+          <img src="images/image_1.jpg" alt=""/>
+          <form action="bookid" method="post">
+          <div class="button_book">
+          <button type="submit" formaction="details">Details</button>
+              <button type="submit">Book</button> 
+              <input type="hidden" name="hide" value="6">
+        </div>
+        </form>
+        </div>
+      </div>
+
+      <div class="home__row">
+        <div class="product">
+          <div class="product__info">
+            <p>Maruthi Suzuki</p>
+          
+          </div>
+          <img src="images/car-6.jpg" alt=""/>
+          <form action="bookid" method="post">
+          <div class="button_book">
+          <button type="submit" formaction="details">Details</button>
+              <button type="submit">Book</button> 
+              <input type="hidden" name="hide" value="7">
+        </div>
+        </form>
+        </div>
+
+        <div class="product">
+          <div class="product__info">
+              <p><b>Benz</b></p>
+            
+          </div>
+          
+          <img src="images/car-7.jpg" alt=""/>
+          <form action="bookid" method="post">
+          <div class="button_book">
+          <button type="submit" formaction="details">Details</button>
+          <button type="submit">Book</button> 
+          <input type="hidden" name="hide" value="8">
+        </div>
+        </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

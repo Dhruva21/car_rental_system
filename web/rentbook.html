@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+h1{
+	
+	font-family: 'Grenze Gotisch', cursive;
+}
+
+
+	input {
+
+                padding: 0px 5px 12px 5px;
+                font-size: 25px;
+                border-radius: 5px;
+                border: 1px solid grey;
+                width:320px;
+
+                }
+            
+            label {
+                position: relative;
+                top:12px;
+                width:200px;
+                float: left;
+				font-size:20px;
+				
+                
+            }
+            
+            #wrapper {
+                
+                width: 550px;
+                margin: 0 auto;
+                
+                
+            }
+            
+            .form-element {
+                
+                margin-bottom: 10px;
+                
+            }
+            
+            #upload {
+              
+                width: 130px;
+                margin-left: 200px;
+				margin-top:5px;
+            }
+			#booknow {
+              
+                width: 130px;
+                margin-left: 200px;
+				margin-top:5px;
+            }
+
+
+body {
+  font-family: Arial;
+  color: white;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: #76D7C4;
+}
+
+.right {
+  right: 0;
+  background-color: #9C640C;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+    <form action="bookcar" method="post" enctype="multipart/form-data">
+<div class="split left">
+  <div class="centered">
+    <h1>Upload a car</h1>
+        <div id="wrapper">
+          
+            <div class="form-element">
+            
+                <label for="type">Type of car</label>
+                <input type="text" name="type" id="type" placeholder = "eg. Benz">
+
+            </div>
+            
+            <div class="form-element">
+            
+                <label for="carno">Car number</label>
+                <input type="text" name="carno" id="carno" placeholder = "eg. TS01AY123">
+
+            </div>
+             
+             <div class="form-element">
+            
+                <label for="nos">Number of seats</label>
+                <input type="text" name="nos" id="nos" placeholder = "eg. 4">
+
+            </div>
+                    
+            <div class="form-element">
+            
+                <label for="mil">Mileage</label>
+                <input type="text" name="mil" id="mil" placeholder = "eg. 12km">
+
+            </div>
+	    
+                    
+	    <div class="form-element">
+		<label for ="uploadcar">Upload your car</label>
+		<input type="file" name="uploadcar" id="uploadcar">
+            </div>
+             <div class="form-element">
+            
+                <input type="submit" id="upload" value="Upload">
+
+            </div>
+            
+        </div>
+
+  </div>
+</div>
+</form>
+    <form action="booked" method="post">
+<div class="split right">
+  <div class="centered">
+    
+    <h1>Book a car</h1>
+	
+	<div id="wrapper">
+            
+            <div class="form-element">
+        
+                <label for="pickup">Pickup Location</label>
+                <input type="text" name="pickup" id="pickup" placeholder = "eg. Secunderabad">
+                
+                </div>
+            
+            <div class="form-element">
+            
+                <label for="drop">Drop Location</label>
+                <input type="text" name="drop" id="drop" placeholder = "eg. Uppal">
+
+            </div>
+            <div class="form-element">
+            
+                <label for="drop">Time</label>
+                <input type="time" name="time" id="time" placeholder = "2:00pm">
+
+            </div>
+            
+	     <div class="form-element">
+            
+                <label for="km">Kilometers</label>
+                <input type="text" name="km" id="km" placeholder = "eg. 20">
+
+            </div>
+            
+            <div>
+		<label for ="license">Upload your license</label>
+		<input type="file" name="license" id="license">
+            </div>
+            
+            
+            
+            <div class="form-element">
+            
+                <input type="submit" id="booknow" value="Book now">
+
+            </div>
+            
+        </div>
+     
+    </div>
+  </div>
+ </form>    
+</body>
+</html> 
+

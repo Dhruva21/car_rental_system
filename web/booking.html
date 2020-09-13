@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking</title>
+    <style type="text/css">
+    .profile {
+  /* background-color: white; */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+.profile__container {
+  background-color: white;
+  width: 300px;
+  display: flex;
+  height: fit-content;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid lightgray;
+}
+.profile__container > h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.profile__container > form > h5 {
+  margin-bottom: 5px;
+}
+
+.profile__container > form > input {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+}
+.profile__UpdateButton {
+  background: #f0c14b;
+  border-radius: 2px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid;
+  margin-top: 10px;
+  border-color: #a88734 #9c7e31 #846a29;
+}
+
+    </style>
+    <script>
+        function valid()
+        {
+            var ul=document.getElementById("ul");
+            if (ul.value()=="")
+            {
+                document.write("Please upload License to proceed!");
+                return false;
+            }
+            return true;
+        }
+    </script>  
+     
+  </head>
+  
+  <body bgcolor="#56baed">
+    <div class="profile">
+      <div class="profile__container">
+        <h1>Booking</h1>
+        <form action="bookedinfo" onsubmit="return valid()" method="post">
+          <h5>Pickup Location</h5>
+          <input type="text" name="pl" />
+
+          <h5>Drop Location</h5>
+          <input type="text" name="dl"/>
+          <h5>Expected Time in (hrs)</h5>
+          <input type="text" name="tm" id="tm"/>
+          <h5>Upload License</h5>
+          <input type="file" name="upload" id="ul"/>
+          <button type="submit" class="profile__UpdateButton">
+            Book
+          </button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
